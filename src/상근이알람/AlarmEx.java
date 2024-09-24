@@ -34,6 +34,7 @@ public class AlarmEx {
             converted_time = (24 * 60) + m; // 45보다 작다는 것은 시간을 별도 계산해줘야한다는 것...!
         }
         converted_time -= 45;
+        // 자바는 나눠버리면 바로 몫이 나오니까 60분=1시간으로 나눠버리고, 나머지는 % 이용해서 구한다.
         System.out.println("설정한 알람 시간은 " + (converted_time / 60) + ":" + (converted_time % 60));
     }
 }
